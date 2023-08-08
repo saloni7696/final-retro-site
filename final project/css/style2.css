@@ -1,0 +1,193 @@
+/* stylesheet for about page */
+/* Reset default margin, padding, and line-height for the whole page */
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* Reset default margin and padding */
+
+  
+  /* Global styles */
+  body {
+    font-family: 'Oswald', sans-serif;
+  }
+
+ /* styling masthead class  */
+.masthead{
+  
+  height:60vh;
+  background-image: url("../img/bg7.jpg");
+  background-size: cover;
+  
+}
+/* styling div in the masthead class  */
+.masthead > div{
+  width:100%;
+  height:100%;
+  background-color: rgba(43, 30, 40, 0.5);
+}
+/* styling h1 to aplly font and align it to the center  */
+.masthead > div > h1{
+  color: #f2ebeb;
+  font-size: 3.1em;
+  font-family: 'Caladea',sans-serif;
+  text-align:center;
+  padding-top: 150px;
+
+}
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+ 
+  
+  /* About section styles */
+  .about-section {
+   background-color: rgba(195, 156, 107, 0.867);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width:100%;
+    margin: 0 auto;
+  }
+  .about-content > h1 {
+    text-align: center;
+    background-color: rgb(45, 44, 44);
+    color: #f0e4e4;
+    padding: 5px;
+  }
+  .about-content > p{
+    padding-top: 15px;
+  }
+  
+  .btn2{
+    background-color: #786b3b ;
+    font-size: 20px;
+    padding: 10px 10px;
+    color:#f0e4e4;
+    border-radius: 1cm;
+  }
+  
+  /* Resurgence section styles */
+  .resurgence-section {
+    background-color: rgba(195, 156, 107, 0.867);
+    padding: 0px 20px 20px 20px;
+    
+  }
+  
+  .resurgence-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .resurgence-content > h2 {
+    text-align: center;
+    background-color: rgb(45, 44, 44);
+    color: #f0e4e4;
+    padding: 5px;
+    
+  }
+  .resurgence-content > p {
+    padding-top: 10px;
+  }
+  .rt-content {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    background: rgba(0, 0, 0, 0.7) url(../img/bgbgbg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    color:#b5b2b2;
+    padding: 10px 10px;
+  }
+  .trust1, .trust2 {
+    padding: 10px 10px;
+  }
+  .trust1 > h2 , .trust2 > h2 {
+    background-color: #151414;
+  } 
+  .pt-content{
+    width:100%;
+  }
+  .pt-content > h2{
+    text-align: center;
+  }
+ 
+ .policies{
+  display:flex;
+ }
+ .policies > p{
+  padding : 10px 10px;
+ }
+ 
+  
+  
+ 
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 1200px) {
+  
+    
+    .revival-section{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+ /* Medium desktop styles (1025px to 1200px) */
+ @media (min-width: 1025px) and (max-width: 1200px) {
+    .revival-section{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }           
+  
+ /* Small desktop styles (901px to 1024px) */
+ @media (min-width: 901px) and (max-width: 1024px){
+    .revival-section{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .rt-content {
+      grid-template-columns: repeat(1 , 100%); /* Change to a single column on smaller screens */
+    }
+  }
+/* Tablet styles (601px to 900px) */
+@media (min-width: 600px) and (max-width: 900px){
+    .about-section {
+      padding: 20px;
+    }
+   
+  .resurgence-section, .rt-content {
+      padding: 30px 20px;
+    }
+   
+    .revival-section{
+      display: grid;
+      grid-template-columns: 50% 50%;/* change to 2 columns on small screens  */
+    }
+    .rt-content {
+      grid-template-columns: repeat(1 , 100%); /* Change to a single column on smaller screens */
+    }
+  }
+  /* making it work on smaller screens  */
+  @media (min-width: 300px) and (max-width: 600px){
+    .revival-section{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      /* change to 2 columns on small screens  */
+    }
+    .rt-content {
+      grid-template-columns: repeat(1 , 100%); /* Change to a single column on smaller screens */
+    }
+    .policies {
+      flex-wrap: wrap;
+  }
+  
+  }
+
+  

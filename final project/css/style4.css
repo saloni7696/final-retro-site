@@ -1,0 +1,240 @@
+/* CSS style for the contact page */
+
+/* Reset default font-family, margin, and padding for the whole page */
+body {
+   
+    margin: 0;
+    padding: 0;
+  }
+  
+ /* Set a max-width for the main content area and center it horizontally */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bdaa80;
+  }
+  /* Styles for the masthead section with a background image */
+  .masthead {
+    background: rgba(0,2,0,0.5) url("../img/bgbgbg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Styling div within the masthead section */
+  .masthead > div{
+    height: 100%;
+    width:100%;
+  }
+   /* Styling h1 within the masthead section */
+  .masthead h1 {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Playfair Display' , sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+  /* Margin for the contact form and contact details classes */
+  .contact-form-section,
+  .contact-details-section {
+    margin-bottom: 40px;
+  }
+  /* Styles for the contact form container class */
+
+  .contact-form-container > h2 {
+    padding-top:20px;
+    font-family: 'Varela Round',sans-serif;
+  }
+  .contact-form-container > p {
+    padding: 10px;
+    font-family: 'Varela Round',sans-serif;
+  }
+  /* Styles for the contact form and contact details classes */
+  .contact-form-container,
+  .contact-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    
+  }
+  /* Styles for headings within the contact form and contact details classes */
+  .contact-form h2,
+  .contact-details-container h2 {
+    font-size: 24px;
+    font-family: 'Varela Round',sans-serif;
+    margin-bottom: 10px;
+  }
+  /* Styles for paragraphs within the contact form and contact details classes */
+  .contact-form p,
+  .contact-details-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Varela Round',sans-serif;
+  }
+  /* Styles for the contact form class */
+  .contact-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  /* Styles for labels, inputs, textarea, and buttons in the contact form */
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    display: block;
+    width: 95%;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  /* Styles for the label in the contact form */
+  .contact-form label {
+    font-weight: bold;
+    font-family: 'Varela Round',sans-serif;
+  }
+  /* Styles for the select options in the contact form */
+  .contact-form option ,
+  .contact-form select {
+    font-family: 'Preahvihear',sans-serif;
+  }
+  /* Styles for inputs and textarea in the contact form */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+/* Padding for the textarea in the contact form */
+  .text-area{
+    padding-top: 20px;
+  }
+  /* Set the textarea to be resizable vertically in the contact form */
+  .contact-form textarea {
+    resize: vertical;
+  }
+  /* Styles for the submit button in the contact form */
+  .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  /* Hover effect for the submit button in the contact form */
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  /* Styles for the unordered list within the contact details container */
+  .contact-details-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  /* Styles for list items within the contact details container */
+  .contact-details-container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+ /* Media Queries for responsive design */
+
+/* Add styles for screens with width up to 1200px */
+  @media (max-width: 1200px) {
+    .masthead h1 {
+      font-size: 28px;
+    }
+  
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      font-size: 14px;
+    }
+  
+    .contact-form textarea {
+     height: 150px;
+    }
+  
+    .contact-form-container,
+    .contact-details-container {
+      width: 400px;
+    }
+  }
+  /* Add styles for screens with width up to 1024px */
+  @media (max-width: 1024px) {
+    .masthead h1 {
+      font-size: 24px;
+    }
+  
+    .contact-form-container,
+    .contact-details-container {
+      width: 350px;
+    }
+  }
+  /* Add styles for screens with width up to 900px */
+  @media (max-width: 900px) {
+    .masthead h1 {
+      font-size: 22px;
+    }
+  
+    .contact-form-container,
+    .contact-details-container {
+     width: 300px;
+    }
+  }
+  /* Add styles for screens with width up to 768px */
+  @media (max-width: 768px) {
+    .masthead {
+      height: 200px;
+    }
+  
+    .masthead h1 {
+      font-size: 20px;
+    }
+  
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      font-size: 16px;
+    }
+  
+    .contact-form-container,
+    .contact-details-container {
+      width: 250px;
+    }
+  }
+  /* Add styles for screens with width up to 600px */
+  @media (max-width: 600px) {
+    .contact-form-container,
+    .contact-details-container {
+      width: 200px;
+    }
+  }
+  /* Add styles for screens with width up to 300px */
+  @media (max-width: 300px) {
+    .masthead h1 {
+      font-size: 18px;
+    }
+  
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      font-size: 14px;
+    }
+  
+    .contact-form textarea {
+      height: 100px;
+    }
+  
+    .contact-form-container,
+    .contact-details-container {
+     width: 150px;
+    }
+  }

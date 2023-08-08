@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- adding meta data  -->
+  <meta charset="utf-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Victor Talking Machine Company - Products">
+<meta name="robots" content ="noindex,nofollow">
+  <title>Victor Talking Machine Company - Products</title>
+  <!-- adding css files -->
+  <link rel="stylesheet" href="./css/style5.css">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- adding js file  -->
+  <script src="./js/myjs.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/resp.js"></script>
+  <!-- adding our fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lobster&family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Preahvihear&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- adding header here with js  -->
+  <div id="header-container"></div>
+ 
+    
+    <script>
+      // Insert the header content into the header container
+      document.getElementById('header-container').innerHTML = headerContent;
+    </script>
+
+  <!-- Main content area -->
+  <main>
+    <!-- Product Section -->
+    <!-- added a class name "product-section" to use in css to give it custom styling, this is similar in all the classes-->
+
+    <section class="product-section">
+      <h1>Featured Products</h1>
+      <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+          <img src="./img/product2.JPG" alt="Product 1">
+          <h3>Gramophone Model 333</h3>
+          <p>Experience the authentic vintage sound with our flagship gramophone model. Crafted with precision and nostalgia, this masterpiece is a true collector's item.</p>
+          <span class="price"> $499  </span> <button type="button" class="bb2" onclick="add1()">Add to Cart</button>
+          <!-- added a function named add1 on onclick to trigger this function created in js to show an alert msg when this button has clicked -->
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" id="product2">
+          <img src="./img/g7.jpg" alt="Product 2">
+          <h3>Gramophone Model 376</h3>
+          <p>Rediscover the magic of classic melodies with our Gramophone Model 376. Immerse yourself in a world of timeless music.</p>
+          <span class="price"> $399 </span><button type="button" class="bb2" onclick="add2()">Add to Cart</button>
+          <!-- added a fuction on onclick to show an alert msg, this similar in all product buttons  -->
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" id="product3">
+          <img src="./img/product5.JPG" alt="Product 3">
+          <h3>Gramophone Model 287</h3>
+          <p>Step into the golden era of music with our Gramophone Model 287. Let the nostalgia of the past fill your heart and soul.</p>
+          <span class="price">$549  </span><button type="button" class="bb2" onclick="add3()">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" id="product4">
+          <img src="./img/g3.jpg" alt="Product 4">
+          <h3>Gramophone Model 223</h3>
+          <p>Our Gramophone Model 223 combines vintage charm with modern craftsmanship to deliver an unparalleled listening experience.</p>
+          <span class="price">$349  </span><button type="button" class="bb2" onclick="add4()">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" id="product5">
+          <img src="./img/product6.jpg" alt="Product 5">
+          <h3>Gramophone Model 231</h3>
+          <p>Indulge in the allure of vintage sound with our Gramophone Model 231. Each piece is a masterpiece of art and engineering.</p>
+          <span class="price">$499 </span><button type="button" class="bb2" onclick="add5()">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" id="product6">
+          <img src="./img/product7.jpg" alt="Product 6">
+          <h3>Gramophone Model 366</h3>
+          <p>Experience the magic of timeless melodies with our Gramophone Model 366. Immerse yourself in the world of vintage music.</p>
+          <span class="price">$449 </span><button type="button" class="bb2" onclick="add6()">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <div class="check-out"> <button type="button"  class="btnn" onclick="check3()">Check out</button></div>
+    <p id="check" class="lastp"></p>
+  </main>
+
+  <div id="footer-container"></div><script>
+    // Insert the footer content into the footer container by js
+    document.getElementById('footer-container').innerHTML = footerContent;
+  </script>
+</body>
+
+</html>

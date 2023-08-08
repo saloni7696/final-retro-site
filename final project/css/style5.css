@@ -1,0 +1,165 @@
+/* stylesheet for product page */
+/* Reset default margin, padding, and line-height for the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Add your navigation bar styles here */
+  
+  /* Main content area */
+  main {
+    padding: 20px;
+    background-color: beige;
+  }
+  /* Styles for the product section */
+  .product-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .product-section h1 {
+    font-size: 28px;
+    font-family: 'Josefin Sans',sans-serif;
+    margin-bottom: 20px;
+    background-color: #e3c893;
+    height: 70px;
+    padding-top: 20px;
+  }
+  /* Styles for the product container */
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px;
+    grid-gap: 30px;
+  }
+  /* Styles for the product cards */
+  .product-card {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #e3c893;
+  }
+  
+  .product-card > img {
+    width: auto;
+    height:150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  /* Button style for 'Our Vision' */
+  .bb2{
+    background-color: #9b804c;
+    color: #f5f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+    padding:7px;
+    
+  }
+  
+  .product-card > h3 {
+    font-size: 20px;
+    font-family:  'Varela Round',sans-serif;;
+    margin-bottom: 10px;
+  }
+  
+  .product-card > p {
+    font-size: 16px;
+    font-family: 'Preahvihear',sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* Styles for the 'Check Out' section */
+  .check-out{
+    align-items: center;
+    text-align: center;
+  }
+  /* Button styles for 'Check Out' button */
+  .btnn{
+    padding: 10px;
+    background-color: #9b804c;
+    cursor: pointer;
+    border-radius:6px;
+    color: #f5f2f2;
+  }
+  /* Hover effect for button */
+  .btnn:hover{
+    background-color: #917b54;
+  }
+ /* Styles for the product cards */
+.product-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: transform 0.3s; /* Add this line for smooth scaling transition */
+}
+
+/* Hover effect - Enlarge the product cards */
+.product-card:hover {
+  transform: scale(1.1);
+}
+.lastp{
+  font-family: 'Edu SA Beginner',sans-serif;
+  text-align: center;
+}
+  
+  /* Media Queries */
+@media (min-width: 1440px) {
+    /* Add styles for screens with width 1440px and above */
+    .product-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    /* Add styles for screens with width between 1200px and 1439px */
+    .product-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* Add styles for screens with width between 1024px and 1199px */
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1023px) {
+    /* Add styles for screens with width between 900px and 1023px */
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 899px) {
+    /* Add styles for screens with width between 768px and 899px */
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 767px) {
+    /* Add styles for screens with width between 600px and 767px */
+    .product-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 599px) {
+    /* Add styles for screens with width 599px and below */
+    .product-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 15px;
+    }
+  }
+  

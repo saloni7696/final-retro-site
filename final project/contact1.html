@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- adding meta data  -->
+  <meta charset="utf-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Victor Talking Machine Company">
+<meta name="robots" content ="noindex,nofollow">
+  <title>Victor Talking Machine Company - Contact</title>
+  <!-- adding css files  -->
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="./css/style4.css">
+  <!-- adding js files  -->
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/resp.js"></script>
+  <script  src="./js/myjs.js"></script>
+  <!-- adding our fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lobster&family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Preahvihear&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+ 
+    
+  <script>
+    // Insert the header content into the header container
+    document.getElementById('header-container').innerHTML = headerContent;
+  </script>
+
+  <!-- Main content area -->
+  <main>
+    <!-- Section for the masthead with a background image -->
+    <section class="masthead">
+      <div >
+        <!-- Heading for the masthead section -->
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <!-- This section contains the contact form -->
+    <section class="contact-form-section">
+      <div class="contact-form-container">
+         <!-- Heading for the contact form -->
+        <h2>Get in Touch</h2>
+        <!-- Introductory paragraph for the contact form -->
+        <p>If you have any questions, inquiries, or feedback, please feel free to reach out to us. We'd love to hear from you!</p>
+       <!-- The form element for user input -->
+        <form class="contact-form" action="submit_form.php" method="post">
+          <!-- Input fields for the user's name,email and password -->
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="password" name="password" placeholder="enter you password" required >
+         <!-- Label and select element for choosing a query -->
+          <label for="query">Choose a query</label>
+          <select id="query" name="query" onchange="toggleFileSelector()">
+            <option value="wrongorder">Wrong Order</option>
+            <option value="notdelivered">Not Delivered</option>
+            <option value="damaged">Damaged</option>
+            <option value="other">Other</option>
+          </select>
+           <!-- The paragraph below will be shown if "damaged" option is selected from the dropdown -->
+          <p id="fileSelection" style="display: none;">
+            <label for="damageFile">Select a file for damage evidence:</label>
+            <input type="file" id="damageFile" name="damageFile">
+          </p>
+
+           <!-- The paragraph below will be shown if "other" option is selected from the dropdown -->
+          <p id="otherText" style="display: none;">
+            Then write it below:
+            <input type="text" id="otherInput" name="otherInput">
+          </p>
+          <!-- Input field for providing the other reaon to contact the company -->
+            <p class="text-area"><textarea name="message" placeholder="Your Message"  cols="30" rows="6" required></textarea></p>
+             <!-- Textarea for the user's message -->
+          <button type="submit">Send Message</button>
+          <!-- Button to submit the form -->
+        </form>
+      </div>
+    </section>
+
+   <!-- This section contains the contact details of the website -->
+<section class="contact-details-section">
+  <div class="contact-details-container">
+    <!-- Heading for the contact information -->
+    <h2>Contact Information</h2>
+     <!-- Introductory paragraph for the contact details -->
+    <p>If you prefer to get in touch with us directly, you can use the following contact details:</p>
+   
+    <!-- Unordered list for the contact information -->
+    <ul>
+      <!-- List item for the address -->
+      <li><strong>Address:</strong> 123 Main Street, Camden, New Jersey, 08000</li>
+      <!-- List item for the Email -->
+      <li>
+        <strong>Email:</strong>
+        <span id="emailDetails" onclick="toggleContactInfo('email')">Click to view</span>
+        <!-- This span will act as a clickable element to show the email when clicked -->
+        <span id="emailContent" style="display: none;">info@victortalkingmachine.com</span>
+        <!-- This span  will contain the email address, but it's initially hidden (display: none) -->
+
+      </li>
+       <!-- List item for the phone number -->
+      <li>
+        <strong>Phone:</strong>
+        <!-- This span will act as a clickable element to show the phone number when clicked -->
+        <span id="phoneDetails" onclick="toggleContactInfo('phone')">Click to view</span>
+        <!-- This span will contain the phone number, but it's initially hidden (display: none) -->
+        <span id="phoneContent" style="display: none;">+1 (555) 123-4567</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  </main>
+
+  <div id="footer-container"></div><script>
+    // Insert the footer content into the footer container
+    document.getElementById('footer-container').innerHTML = footerContent;
+  </script>
+
+</body>
+
+</html>

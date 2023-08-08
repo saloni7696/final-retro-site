@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- adding meta data  -->
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Victor Talking Machine Company">
+    <meta name="robots" content ="noindex,nofollow">
+    <!-- adding stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- adding js files  -->
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/resp.js"></script>
+    <script src="./js/myjs.js"></script>
+    <title>Victor Talking Machine Company</title>
+    <!-- adding fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lobster&family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Preahvihear&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<!-- function on loading to ask the user to accept cookies -->
+<body onload="sss()">
+    <div id="header-container"></div>
+    
+    <script>
+      // Insert the header content into the header container
+      document.getElementById('header-container').innerHTML = headerContent;
+    </script>
+    <!-- this section has background image in css  -->
+    <div class="background firstSection">
+        <div class="boxmain">
+            <div class="firstHalf">
+                <p class="big">Turn Back Time </p>
+                <p class="small">Step into the world of vintage sound and rediscover the magic of gramophones. Our collection boasts a range of beautifully restored gramophones, each a timeless masterpiece that will enchant music lovers and history enthusiasts alike.</p>
+                <div class="buttons">
+                    <button class="bb" onclick="success()">Subscribe</button>
+                    <button class="bb" onclick="video()">Watch Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <!-- Container for text content -->
+        <div class="para">
+            <!-- here i gave custom classes to sections and div to style them in css  -->
+            
+        <h3 class="sectionTag big">The Elegance of Vintage Design</h3>
+        <!-- Heading for the section -->
+        <p class="sectionSubTag small">The gramophone, also known as the phonograph, was invented by Thomas Edison in 1877. Edison's initial goal was to create a device for transcribing telegraph messages, but he discovered that it could also reproduce sound. Emile Berliner, a German-born American inventor, later made significant improvements to the design by using flat discs instead of cylinders. The gramophone quickly gained popularity for its ease of use and mass-produced records, revolutionizing how people experienced music and laying the foundation for the modern music industry. </p>
+        </div>
+         <!-- Container for the gramophone image -->
+        <div class="nail" id="vv">
+            <!-- here i gave this div an id 'vv' to make the function video change this image to an youtube video using a iframe  -->
+            <img src="./img/g11.jpg" alt="gramophone Record image" >
+        </div>
+    </section>
+
+    <section class="section section-left" >
+        <!-- Container for text content -->
+        <div class="para">
+            <!-- Heading for the section -->
+        <h3 class="sectionTag big">Welcome to GramophoneRevival!</h3>
+        <p class="sectionSubTag small">Step into the world of timeless melodies and experience the nostalgia of a bygone era with our meticulously curated collection of gramophones. Rediscover the magic of analog sound as the needle gently caresses the grooves of vintage records, filling the air with warm, crackling tunes. Each gramophone in our selection is a masterpiece of craftsmanship, meticulously restored to its former glory, ready to take you on a musical journey through history. Whether you are a seasoned collector or a music enthusiast looking for a unique listening experience, GramophoneRevival has the perfect piece to add to your collection. Embrace the charm of yesteryears and immerse yourself in the enchanting world of gramophones - where the past meets the present in perfect harmony </p>
+        </div>
+        <div class="nail">
+            <!-- Container for the gramophone image -->
+            <img src="./img/g9.jpg" alt="gramophone image" >
+        </div> 
+    </section>
+    <section class="section" >
+        <!-- Container for text content -->
+        <div class="para">
+        <h3 class="sectionTag big">Curious about how to play a gramophone?</h3>
+        <p class="sectionSubTag small">It's simple and utterly captivating. Carefully wind the hand-crank, place the needle on the record, and witness the mechanics of history in motion. The sound resonates through the horn, filling the room with vintage melodies that captivate the soul.Whether you're an avid collector or a first-time enthusiast, GramophoneTrove has the perfect gramophone to suit your taste and style. Indulge in the allure of vintage sound and let our gramophones transport you to an era of elegance and grace.
+            </p>
+        </div>
+         <!-- Container for the gramophone image -->
+        <div class="nail">
+            <img src="./img/g10.jpg" alt="gramophone image" >
+        </div>
+    </section>
+      
+   
+    <div id="footer-container"></div> 
+    <!-- here i called the footer-container from footer.js  -->
+    <script> 
+        // Insert the footer content into the footer container
+        document.getElementById('footer-container').innerHTML = footerContent;
+      </script>
+    
+
+    
+</body>
+
+</html>
